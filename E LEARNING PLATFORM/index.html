@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>LearnHub</h1>
+            <nav id="navbar">
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button id="menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Empower Your Career with Online Learning</h2>
+            <p>Discover top-rated courses and learn from industry experts.</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Featured Courses</h2>
+        <div class="course-container" id="course-container">
+            <div class="course-card" data-category="programming">
+                <img src="images/course1.png" alt="JavaScript Course">
+                <h3>JavaScript Basics</h3>
+                <p>Learn the fundamentals of JavaScript programming.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="course-card" data-category="data-science">
+                <img src="images/course2.png" alt="Python Course">
+                <h3>Data Analysis with Python</h3>
+                <p>Analyze data and create insightful visualizations with Python.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="course-card" data-category="web-development">
+                <img src="images/course3.png" alt="Web Development Course">
+                <h3>Full-Stack Web Development</h3>
+                <p>Master front-end and back-end web technologies.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn" onclick="filterCourses('all')">All</button>
+            <button class="filter-btn" onclick="filterCourses('programming')">Programming</button>
+            <button class="filter-btn" onclick="filterCourses('data-science')">Data Science</button>
+            <button class="filter-btn" onclick="filterCourses('web-development')">Web Development</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At LearnHub, we strive to provide top-quality education accessible to everyone. Join thousands of learners who trust us for their career growth.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LearnHub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
